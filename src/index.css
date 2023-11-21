@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-app {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.main-app::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: url("./assets/images/bg-mountain.jpg") no-repeat center
+    center/cover;
+  z-index: -1;
+}
